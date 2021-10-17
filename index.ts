@@ -25,7 +25,7 @@ const fuelUpdateInput = document.getElementById(
 let updateCar: Car; //Atnaujinamo automobilio Objektas
 
 enum KuroTipas {
-  Dyzelis,
+  Dyzelinas,
   Benzinas,
   Hibridas,
 }
@@ -157,7 +157,7 @@ function allCarsList() {
 }
 
 function dyzelCarsList() {
-  publishCars(KuroTipas.Dyzelis);
+  publishCars(KuroTipas.Dyzelinas);
 }
 
 function gasCarsList() {

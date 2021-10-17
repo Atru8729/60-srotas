@@ -15,7 +15,7 @@ const fuelUpdateInput = document.getElementById('updateFuel');
 let updateCar; //Atnaujinamo automobilio Objektas
 var KuroTipas;
 (function (KuroTipas) {
-    KuroTipas[KuroTipas["Dyzelis"] = 0] = "Dyzelis";
+    KuroTipas[KuroTipas["Dyzelinas"] = 0] = "Dyzelinas";
     KuroTipas[KuroTipas["Benzinas"] = 1] = "Benzinas";
     KuroTipas[KuroTipas["Hibridas"] = 2] = "Hibridas";
 })(KuroTipas || (KuroTipas = {}));
@@ -112,7 +112,7 @@ function allCarsList() {
     publishCars();
 }
 function dyzelCarsList() {
-    publishCars(KuroTipas.Dyzelis);
+    publishCars(KuroTipas.Dyzelinas);
 }
 function gasCarsList() {
     publishCars(KuroTipas.Benzinas);
